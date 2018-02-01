@@ -9,7 +9,7 @@ jobs:
     working_directory: /go/src/github.com/snow-flake/sphlib-3.0
     steps:
       - checkout
-      - run apt-get update && apt-get install -y build-essential
+      - run: apt-get update && apt-get install -y build-essential
 
       # specify any bash command here prefixed with `run: `
       - run: ./c/build.sh
